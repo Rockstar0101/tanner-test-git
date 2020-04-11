@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanner | Product</title>
+    <link rel="icon" type="image/png" href="https://hub2technologies.com/wp-content/uploads/cropped-h2logo-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<!--Header part-->
+<div class="hbody">
+    <div class="header">
+        <div class="logo">
+            <div class="logobc">
+                <img src="https://hub2technologies.com/wp-content/uploads/logo.png" alt="logo">
+            </div>
+        </div>
+        <ul>
+            <li><a href="index.html#navysalt">Navysalt</a></li>
+            <li><a href="index.html#voyager">voyager</a></li>
+            <li><a href="index.html#drifter">drifter</a></li>
+            <li><a href="index.html#collection">collection</a></li>
+            <li><a href="#contact">contact</a></li>
+        </ul>
+       <div class="drop" id="drop" onclick="drop()">
+            <div id="drop2"></div>
+       </div>
+        <div class="toggle" id="toggle">
+            <ul>
+                <li><a href="index.html#navysalt">Navysalt</a></li>
+                <li><a href="index.html#voyager">voyager</a></li>
+                <li><a href="index.html#drifer">drifter</a></li>
+                <li><a href="index.html#collection">collection</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--Header ends-->
+
+<!--Product part Starts-->
+    <div class="main_product">
+        <div class="product_img">
+            <img src="images/bag.webp" alt="bags">
+            <ul class="product_ul">
+                <li>01</li>
+                <li>02</li>
+                <li class="arrow_product fa fa-angle-left"></li>
+                <li class="active">03
+                    <svg height="100px" width="4px">
+                        <line x1="0" y1="0" x2="0" y2="100" style="stroke:rgba(48, 43, 43,0.6);stroke-width:4" />
+                        Sorry, your browser does not support inline SVG.
+                      </svg>
+                </li>
+                <li class="arrow_product fa fa-angle-right"></li>
+                <li>04</li>
+                <li>05</li>
+            </ul>
+        </div>
+        <div class="product_desc">
+            <div class="svghead">
+                <h6 style="color:#af672c">TANNER GOODS</h6>
+                <h6>NAVY SALT & PEPPER</h6>
+                <svg height="40px" width="4px">
+                    <line x1="0" y1="0" x2="0" y2="100" style="stroke:rgb(48, 43, 43);stroke-width:4" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+                <h1 style="letter-spacing: 5px;margin-top:20px">$475.00</h1>
+                <h2 style="letter-spacing: 5px;margin-top:20px;margin-bottom:20px">VOYAGER DAYPACK</h2>
+            </div>
+            <div class="content_desc">
+                <div class="content_topics">
+                    <div class="active">DESCRIPTION</div>
+                    <div class="">DETAILS</div>
+                    <div class="">SHIPPING DETAILS</div>
+                </div>
+                <div class="content_details">
+                    <p class="active">Whether you're stomping around outdoors or traversing the city, our Voyager Daypack was designed to be adaptable in all environments, compact, lightweight and a comfortable for people of all sizes.</p>
+                    <p class="">There will be some details about the product</p>
+                    <p class="">There will be shipping details of the product</p>
+                </div>
+            </div>
+            <div class="buying_options">
+                <form method="post">
+                    <input type="submit" value="BUY">
+                    <div class="quantity">
+                        <a href="javascript:void(0)" class="less" onclick="change_qty(-1)">-</a>
+                        <input type="number" name="qty" id="qty" value="1">
+                        <a href="javascript:void(0)" class="more" onclick="change_qty(1)">+</a><br>
+                        <p style="text-align: center;font-size:0.7em">QUANTITY</p>
+                    </div>
+                </form>
+            </div><br>
+            <p class="terms">QUESTIONS ABOUT OUR PRODUCTS? GIVE US A CALL <span style="color:#af672c">1-503-862-3224</span></p>
+        </div>
+    </div>
+    <div class="product_share">
+        <i class="fa fa-twitter i1"></i><br>
+        <i class="fa fa-pinterest i2"></i><br>
+        <i class="fa fa-facebook i3"></i>
+    </div>
+<!--Product End-->
+
+<!--Footer starts-->
+<footer id="contact">
+    <div class="row">
+        <div class="f1">
+            <img src="https://hub2technologies.com/wp-content/uploads/logo.png" alt="logo">
+        </div>
+        <div class="f2">
+            <ul>
+                <li><a href="">FINDA</a></li>
+                <li><a href="">STORE</a></li>
+                <li><a href="">SIZING</a></li>
+                <li><a href="">CARE</a></li>
+                <li><a href="">WATCH</a></li>
+            </ul>
+        </div>
+        <div class="f3">
+            <p><span style="font-weight: bold;">Sebazzo Ltd, Unit 3F2</span><br>Zetland House <br>5-25 Scrutton Street <br>London EC2A 4HJ</p>
+        </div>
+        <div class="f4">
+            <h5>EMAIL NEWSLETTERS</h5>
+            <P>Sign Up for new TANNER GOODS content, updates, surveys & offers</P>
+            <input type="email" name="email" >
+            <input type="submit" value="&rsaquo;" id="bt">
+        </div>
+    </div>
+    <div class="mt-3">
+        <div class="copy1"><p>© TANNER GOODS PORTLAND ORE 2016</p></div>
+        <div class="copy2">
+            <ul>
+                <li><a href="">facebook</a></li>
+                <li><a href="">pinterest</a></li>
+                <li><a href="">twitter</a></li>
+                <li><a href="">instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--Footer Ends-->
+
+<!--scripts for the page-->
+    <script>
+        var a,b,c,d,e,f, less,num;
+        a = document.querySelectorAll('.content_topics');
+        b = a[0].getElementsByTagName('div');
+        c = document.querySelectorAll('.content_details');
+        d = c[0].getElementsByTagName('p');
+
+        for (let i = 0; i < b.length; i++) {
+            b[i].onclick = () => {
+                for (let j = 0; j < b.length; j++) {
+                    b[j].classList.remove('active');
+                    d[j].classList.remove('active');
+
+                }
+                b[i].classList.add('active');
+                d[i].classList.add('active');
+            };
+            
+        }
+
+        qty = document.querySelector('#qty');
+        function change_qty(a){
+            var num = parseInt(qty.value);
+            if (a == -1 && num == 1) {
+                alert('You have to select at least 1 product  to buy!');
+            }
+            else{
+            qty.value = num + a;
+            }
+        };
+    </script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

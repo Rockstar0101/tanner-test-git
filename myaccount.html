@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanner | My Account</title>
+    <link rel="icon" type="image/png" href="https://hub2technologies.com/wp-content/uploads/cropped-h2logo-32x32.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!--Header part-->
+    <div class="hbody">
+        <div class="header">
+            <div class="logo">
+                <div class="logobc">
+                    <img src="https://hub2technologies.com/wp-content/uploads/logo.png" alt="logo">
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html#navysalt">Navysalt</a></li>
+                <li><a href="index.html#voyager">voyager</a></li>
+                <li><a href="index.html#drifter">drifter</a></li>
+                <li><a href="index.html#collection">collection</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+           <div class="drop" id="drop" onclick="drop()">
+                <div id="drop2"></div>
+           </div>
+            <div class="toggle" id="toggle">
+                <ul>
+                    <li><a href="index.html#navysalt">Navysalt</a></li>
+                    <li><a href="index.html#voyager">voyager</a></li>
+                    <li><a href="index.html#drifer">drifter</a></li>
+                    <li><a href="index.html#collection">collection</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--Header ends-->
+
+<!-- My account page  -->
+<div class="myaccount">
+    <h1 class="ma_head">My Account</h1>
+    <div class="account">
+        <div class="ac_menu">
+            <a href="#" class="active"><i class="fa fa-user" aria-hidden="true"></i> My details</a>
+            <a href="#" class=""><i class="fa fa-map-marker" aria-hidden="true"></i> My address</a>
+            <a href="#" class=""><i class="fa fa-shopping-bag" aria-hidden="true"></i> My orders</a>
+            <a href="verify.html" class=""><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a>
+        </div>
+        <div class="ac_details">
+            <!-- Mydetails  -->
+            <div class="topic active">
+                <h2>My details</h2>
+                <h6>Personal Information <a href="javascript:void(0)" id="edit_details_state"><label for="edit_fname"><i class="fa fa-edit" area-hidden="true"></i>Edit details</label></a></h6><hr>
+                <div class="detailbox">
+                    <div class="db1">
+                        <p style="text-align: justify;">This information is useful when placing an order and for delievery partners as well as for security purposes.
+                            Please only provide your real information.</p>
+                    </div>
+                    <div class="db2">
+                        <form method="POST">
+                            <div class="input">
+                                <h6>FIRST NAME</h6>
+                                <input type="text" id="edit_fname" value="John" disabled>
+                            </div>
+                            <div class="input">
+                                <h6>LAST NAME</h6>
+                                <input type="text" value="Smith" disabled>
+                            </div>
+                            <div class="input">
+                                <h6>BIRTH DATE</h6>
+                                <input type="date" value="1970-01-01" disabled>
+                            </div>
+                            <div class="input">
+                                <h6>MOBILE NUMBER</h6>
+                                <input type="text" value="0123456789" disabled>
+                            </div>
+                            <div class="input">
+                                <input type="submit" value="SAVE" disabled>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <h6>Account Details <a href="javascript:void(0)">
+                    <label id="edit_email_state" for="edit_email"><i class="fa fa-edit" area-hidden="true"></i>Edit email</label>&nbsp;
+                    <label id="edit_pass_state" for="edit_pass"><i class="fa fa-edit" area-hidden="true"></i>Edit password</label></a>
+                </h6><hr>
+                <div class="detailbox">
+                    <div class="db1">
+                        <p style="text-align: justify;">This information is useful for login and sending info about your orders.
+                            Please only provide your real information.</p>
+                    </div>
+                    <div class="db2">
+                        <form method="POST">
+                            <div class="input">
+                                <h6>Email Address</h6>
+                                <input type="email" id="edit_email" value="John@example.com" disabled>
+                            </div>
+                            <div class="input">
+                                <h6>Current Password</h6>
+                                <input type="password" id="edit_pass" disabled>
+                            </div>
+                            <div class="input" id="edit_npass">
+                                <h6>New Password</h6>
+                                <input type="password"  disabled>
+                            </div>
+                            <div class="input">
+                                <input type="submit" value="SAVE" disabled>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <h6><i class="fa fa-ban" style="color:red;" aria-hidden="true"></i> Deactivate Account</h6><hr>
+                <div class="detailbox">
+                    <div class="db1">
+                        <p style="text-align: justify;">Please be careful once your account gets deactivated you'll lose all your informations and order history, and you have to re-register for it.</p>
+                    </div>
+                    <div class="db2">
+                        <form method="POST">
+                            <div class="input" style="float: none;">
+                                <h6>Your Current Password</h6>
+                                <input type="password" id="">
+                            </div>
+                            <div class="input">
+                                <input type="submit" value="DEACTIVATE NOW">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- My address book -->
+            <div class="topic">
+                <h2>Manage address</h2>
+                <h6>Address list <a id="add_ad" href="javascript:void(0)"><label ><i class="fa fa-plus" area-hidden="true"></i> Add New Address</label></a></h6><hr>
+                <div class="address new_ad">
+                    <span><i class="fa fa-close new_adcross" style="color:red"></i></span>
+                    <form  method="post">
+                        <h6>Choose address type:</h6>
+                        <input type="radio" name="ad_name" id="Home"  required>
+                        <label for="Home">Home</label>
+
+                        <input type="radio" name="ad_name" id="Work">
+                        <label for="Work">Work</label>
+
+                        <input type="radio" name="ad_name" id="Other">
+                        <label for="Other">Other</label><br>
+
+                        <input type="text" placeholder="Name your place (for eg. Gym)" id="other_option">
+                        <input type="text" placeholder="house no./flat no./residency"><br>
+                        <input type="text" placeholder="local area/city/town"><br>
+                        <input type="text" placeholder="state/country"><br>
+                        <input type="text" placeholder="pincode"><br>
+                        <input type="submit" value="save this address"><br>
+                    </form>
+                </div>
+                <div class="address">
+                    <span><i class="fa fa-edit" style="color:rgb(0, 183, 255)"></i>&nbsp;
+                        <i class="fa fa-close" style="color:red"></i></span>
+                    <p><i class="fa fa-home" area-hidden="true"></i> Home</p>
+                    <p class="adline1">Sebazzo Ltd, Unit 3F2</p>
+                    <p class="adline2">Zetland House
+                        5-25 Scrutton Street</p>
+                    <p class="adline3">London EC2A 4HJ</p>
+                </div>
+
+                <div class="address">
+                    <span><i class="fa fa-edit" style="color:rgb(0, 183, 255)"></i>&nbsp;
+                        <i class="fa fa-close" style="color:red"></i></span>
+                    <p><i class="fa fa-briefcase" area-hidden="true"></i> Work</p>
+                    <p class="adline1">Sebazzo Ltd, Unit 3F2</p>
+                    <p class="adline2">Zetland House
+                        5-25 Scrutton Street</p>
+                    <p class="adline3">London EC2A 4HJ</p>
+                </div>
+
+                <div class="address">
+                    <span><i class="fa fa-edit" style="color:rgb(0, 183, 255)"></i>&nbsp;
+                        <i class="fa fa-close" style="color:red"></i></span>
+                    <p><i class="fa fa-address-book-o" area-hidden="true"></i> custom name/location</p>
+                    <p class="adline1">Sebazzo Ltd, Unit 3F2</p>
+                    <p class="adline2">Zetland House
+                        5-25 Scrutton Street</p>
+                    <p class="adline3">London EC2A 4HJ</p>
+                </div>
+            </div>
+
+            <!-- My Orders  -->
+            <div class="topic">
+                <h2>My Orders</h2>
+                <h6>Recent orders list <a href="javascript:void(0)"><label><i class="fa fa-trash" area-hidden="true"></i> Clear list</label></a></h6><hr>
+                <div class="orders">
+                    <span class="order_state">processing</span>
+                    <div class="img">
+                        <a href="product.html"><img src="images/bag.webp" alt=""></a>
+                    </div>
+                    <div class="info">
+                        <div class="mo_desc">
+                            <a href="product.html"><h6>Voyager Daypack</h6></a>
+                            <p>leather</p>
+                            <p>another quality</p>
+                            <p>so on</p>
+                        </div>
+                        <div class="mo_qty">
+                            <h6>Quantity</h6>
+                            <input type="number" name="" value="1" id="" min="1" readonly>
+                        </div>
+                        <div class="mo_price">
+                            <h6 id="mo_price">$<span>358.5</span></h6>
+                            <p>ordered on 24th Mar 2020</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="orders">
+                    <span class="order_state" >delievered</span>
+                    <div class="img">
+                        <a href="product.html"><img src="images/bag.webp" alt=""></a>
+                    </div>
+                    <div class="info">
+                        <div class="mo_desc">
+                            <a href="product.html"><h6>Voyager Dopp Kit</h6></a>
+                            <p>leather</p>
+                            <p>another quality</p>
+                            <p>so on</p>
+                        </div>
+                        <div class="mo_qty">
+                            <h6>Quantity</h6>
+                            <input type="number" name="" value="1" id="" min="1" readonly>
+                        </div>
+                        <div class="mo_price">
+                            <h6 id="mo_price">$<span>420.5</span></h6>
+                            <p>ordered on 15th Jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer starts-->
+<footer id="contact">
+    <div class="row">
+        <div class="f1">
+            <img src="https://hub2technologies.com/wp-content/uploads/logo.png" alt="logo">
+        </div>
+        <div class="f2">
+            <ul>
+                <li><a href="">FINDA</a></li>
+                <li><a href="">STORE</a></li>
+                <li><a href="">SIZING</a></li>
+                <li><a href="">CARE</a></li>
+                <li><a href="">WATCH</a></li>
+            </ul>
+        </div>
+        <div class="f3">
+            <p><span style="font-weight: bold;">Sebazzo Ltd, Unit 3F2</span><br>Zetland House <br>5-25 Scrutton Street <br>London EC2A 4HJ</p>
+        </div>
+        <div class="f4">
+            <h5>EMAIL NEWSLETTERS</h5>
+            <P>Sign Up for new TANNER GOODS content, updates, surveys & offers</P>
+            <input type="email" name="email" >
+            <input type="submit" value="&rsaquo;" id="bt">
+        </div>
+    </div>
+    <div class="mt-3">
+        <div class="copy1"><p>© TANNER GOODS PORTLAND ORE 2016</p></div>
+        <div class="copy2">
+            <ul>
+                <li><a href="">facebook</a></li>
+                <li><a href="">pinterest</a></li>
+                <li><a href="">twitter</a></li>
+                <li><a href="">instagram</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!--Footer Ends-->
+    <!-- meri adhuri kahani -->
+    <!--scripts for the page-->
+    <script>
+        var a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v;
+        a = document.querySelector('.ac_menu').children;
+        b = document.querySelectorAll('.ac_details');
+        c = b[0].getElementsByClassName('topic');
+        d = c[1].getElementsByClassName('new_ad');
+        e = document.getElementById('add_ad');
+        f = c[1].getElementsByClassName('new_adcross');
+        g = d[0].querySelector('#Other');
+        h = d[0].querySelector('#other_option');
+        i = d[0].querySelector('#Home');
+        j = d[0].querySelector('#Work');
+        k = document.getElementById('edit_details_state');
+        l = document.getElementById('edit_email_state');
+        m = document.getElementById('edit_pass_state');
+        n = document.querySelectorAll('.db2')
+        o = n[0].getElementsByTagName('input');
+        p = n[1].getElementsByTagName('input');
+        t = document.getElementById('edit_npass');
+        u = document.querySelectorAll('.order_state');
+
+        for (let i = 0; i < c.length; i++) {
+            a[i].onclick = () => {
+                for (let j = 0; j < c.length; j++) {
+                    a[j].classList.remove('active');
+                    c[j].classList.remove('active');                    
+                }
+            a[i].classList.add('active');
+            c[i].classList.add('active');                    
+            }            
+        }
+        e.onclick = () => d[0].style.display="block";
+        f[0].onclick = () => d[0].style.display="none";
+        mycheck(g);
+        mycheck(i);
+        mycheck(j);
+        function mycheck(s){
+            s.onchange = () => {
+                if(g.checked){
+                h.style.display="block";
+                }
+                else{
+                    h.style.display="none";
+                }
+            }
+        }
+        able(k,o);
+        able(l,p);
+        able(m,p)
+        function able(q,r){
+            q.onclick = ()=>{
+                for (let i = 0; i < r.length; i++) {
+                    r[i].removeAttribute('disabled');
+                    if(q==m){
+                            t.style.display = "block";
+                    }else{
+                        t.style.display = "none";
+                    };            
+                }
+            }
+        }
+        for (let i = 0; i < u.length; i++) {
+            if (u[i].innerHTML=="delievered") {
+                u[i].style.backgroundColor = "rgb(39, 136, 39)";
+            }
+            else if (u[i].innerHTML=="returned") {
+                u[i].style.backgroundColor = "rgb(255, 0, 0)";
+            }               
+        }
+
+
+    </script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
